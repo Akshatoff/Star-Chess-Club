@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Montserrat&family=Noto+Sans:wght@200;400&family=Pixelify+Sans&family=Poppins&display=swap');
+
+/* font-family: 'Coming Soon', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Pixelify Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+/* Prerquisite */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg:#303841;
+    --primary:#3A4750;
+    --secondary:#F6C90E;
+    --text:#eee;
+}
+
+body,html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background: var(--text);
+}
+
+.section {
+    width:100rem;
+    height: 38.2rem;
+    
+}
+
+.text {
+    color:var(--bg);
+}
+
+button {
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.btn {  
+    color: var(--text);
+    background-color: var(--bg);
+    border: 2px solid var(--bg);
+    border-radius: 10px;
+    padding: 1rem 4rem 1rem 4rem;
+    font-size: 1.1rem;
+    
+}
+
+.btn-1 {
+    color: var(--bg);
+    background: var(--text);
+    border: 2px solid var(--bg);
+    border-radius: 10px;
+    padding: 1rem 4rem 1rem 4rem;
+    font-size: 1.1rem;
+}
+.btn:hover {
+    color: var(--bg);
+    background-color: var(--text);
+    transform: scale(0.8);
+}
+.btn-1:hover {
+    transform: scale(0.8);
+}
+
+.image {
+    border-radius: 20px;
+    transition: all 100ms ease-in-out;
+}
+.image:hover {
+    transform: rotateZ(-15deg);
+}
+.link {
+    text-decoration: none;
+
+}
+/* Home */
+
+#home {
+    background-color: var(--text);
+}
+
+#title {
+    color: var(--bg);
+    font-size: 2rem;
+    font-family: 'Noto Sans', sans-serif;
+    width: 450px;
+    padding-top: 15rem;
+    margin-left: 5rem;
+
+}
+
+#description {
+    width: 650px;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-left: 5rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5rem;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+#hero {
+    width: 30rem;
+    height:20rem;
+    float: right;
+    margin-right: 23rem;
+    margin-top: -20rem;
+}
+
+/* About */
+
+#about-title {
+    float: right;
+    margin-right: 30rem;
+    margin-top: 12rem;
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif; 
+}
+
+#description-about {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+    float: right;
+    margin-right: 27.5rem;
+    width: 450px;
+    margin-top: 1rem;
+    color: var(--primary);
+}
+
+.btn-container-about {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    margin-right: 27.5rem;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+/* Contact */
+
+#contact-page {
+    height: 30rem;
+}
+#contact-title {
+    color: var(--bg);
+    font-size: 2.5rem;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    margin-right: 22rem;
+
+}
+#contact-description {
+    color: var(--primary);
+    text-align: center;
+    margin-right: 20rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    gap: 1rem;
+}
+
+.card-body {
+    width: 25rem;
+    height: 15rem;
+    border: 2px solid var(--secondary);
+    border-radius: 20px;
+}
+
+.card-title {
+    color: var(--bg);
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.card-description {
+    color: var(--primary);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+#phone-btn {
+    margin-top: 2rem;
+    margin-left: 4rem;
+}
+
+#email-btn {
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction:row;
+    gap:1rem;
+    margin-left: 7rem;
+    margin-top: 2rem;
+}
+
+.fa-brands {
+    font-size:3rem;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+.fa-brands:hover{ 
+    transform: scale(0.8);
+}
+/* Feedback */
+
+#feedback-title {
+    color: var(--bg);
+    padding-top: 3rem;
+    margin-left: 5rem;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#feedback-description {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 5rem;
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-top: 1rem;
+}
