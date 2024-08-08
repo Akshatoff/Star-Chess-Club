@@ -14,13 +14,14 @@ font-family: 'Poppins', sans-serif; */
 }
 
 :root {
-    --bg:#303841;
-    --primary:#3A4750;
-    --secondary:#F6C90E;
-    --text:#eee;
+    --bg: #303841;
+    --primary: #3A4750;
+    --secondary: #F6C90E;
+    --text: #eee;
 }
 
-body,html {
+body,
+html {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
@@ -28,29 +29,29 @@ body,html {
 }
 
 .section {
-    width:100rem;
-    height: 38.2rem;
-    
+    width: 100rem;
+    height: 100vh;
+
 }
 
 .text {
-    color:var(--bg);
+    color: var(--bg);
 }
 
 button {
     cursor: pointer;
     transition: all 300ms ease-in-out;
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif;
 }
 
-.btn {  
+.btn {
     color: var(--text);
     background-color: var(--bg);
     border: 2px solid var(--bg);
     border-radius: 10px;
     padding: 1rem 4rem 1rem 4rem;
     font-size: 1.1rem;
-    
+
 }
 
 .btn-1 {
@@ -61,11 +62,13 @@ button {
     padding: 1rem 4rem 1rem 4rem;
     font-size: 1.1rem;
 }
+
 .btn:hover {
     color: var(--bg);
     background-color: var(--text);
     transform: scale(0.8);
 }
+
 .btn-1:hover {
     transform: scale(0.8);
 }
@@ -74,17 +77,45 @@ button {
     border-radius: 20px;
     transition: all 100ms ease-in-out;
 }
+
 .image:hover {
     transform: rotateZ(-15deg);
 }
+
 .link {
     text-decoration: none;
 
 }
+
 /* Home */
 
 #home {
     background-color: var(--text);
+}
+
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+    pointer-events: none;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
 }
 
 #title {
@@ -114,9 +145,10 @@ button {
     margin-top: 1rem;
     gap: 1rem;
 }
+
 #hero {
     width: 30rem;
-    height:20rem;
+    height: 20rem;
     float: right;
     margin-right: 23rem;
     margin-top: -20rem;
@@ -129,12 +161,12 @@ button {
     margin-right: 30rem;
     margin-top: 12rem;
     font-size: 3rem;
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif;
 }
 
 #description-about {
     font-size: 1rem;
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
     float: right;
     margin-right: 27.5rem;
@@ -152,19 +184,38 @@ button {
     gap: 1rem;
 }
 
+.hemant {
+    width: 25rem;
+    border-radius: 15px;
+    float: left;
+    height: 30rem;
+    margin: -16rem 4rem;
+}
+
+.hemant::after {
+    content: '';
+    border-radius: 100%;
+    width: 5rem;
+    height: 5rem;
+    background-color: #303841;
+    display: block;
+}
+
 /* Contact */
 
 #contact-page {
-    height: 30rem;
+    height: 100vh;
 }
+
 #contact-title {
     color: var(--bg);
     font-size: 2.5rem;
     font-family: 'Noto Sans', sans-serif;
     text-align: center;
+    padding-top: 5rem;
     margin-right: 22rem;
-
 }
+
 #contact-description {
     color: var(--primary);
     text-align: center;
@@ -177,15 +228,14 @@ button {
 .card-container {
     display: flex;
     flex-direction: row;
-    margin-top: 2rem;
-    margin-left: 1rem;
+    margin: 2rem 1rem;
     gap: 1rem;
 }
 
 .card-body {
     width: 25rem;
     height: 15rem;
-    border: 2px solid var(--secondary);
+    border: 2px solid var(--bg);
     border-radius: 20px;
 }
 
@@ -216,34 +266,261 @@ button {
 
 .icon-container {
     display: flex;
-    flex-direction:row;
-    gap:1rem;
+    flex-direction: row;
+    gap: 1rem;
     margin-left: 7rem;
     margin-top: 2rem;
 }
 
 .fa-brands {
-    font-size:3rem;
+    font-size: 3rem;
     cursor: pointer;
     transition: all 200ms ease-in-out;
 }
 
-.fa-brands:hover{ 
+.fa-brands:hover {
     transform: scale(0.8);
 }
+
 /* Feedback */
 
-#feedback-title {
-    color: var(--bg);
-    padding-top: 3rem;
-    margin-left: 5rem;
-    font-family: 'Noto Sans', sans-serif;
+blockquote {
+    padding: 0;
+    margin: 0;
 }
 
-#feedback-description {
-    font-family: 'Poppins', sans-serif;
-    margin-left: 5rem;
-    font-size: 1.5rem;
-    color: var(--primary);
-    margin-top: 1rem;
+section.t-bq-section {
+    padding: 30px;
+    margin-bottom: 60px;
 }
+
+.t-bq-wrapper.t-bq-wrapper-boxed {
+    width: 1176px;
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem;
+}
+
+.t-bq-wrapper.t-bq-wrapper-fullwidth {
+    max-width: 100%;
+}
+
+.t-bq-quote-jasper {
+    position: relative;
+    box-shadow: 2px 2px 25px #cecece;
+    border-radius: 10px;
+}
+
+.t-bq-quote-jasper .t-bq-quote-jasper-pattern {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-start;
+    background: url("https://raw.githubusercontent.com/taviskaron/t-div-blockquotes/main/img/hexabump.png") repeat;
+    border-radius: 10px 10px 0 0;
+}
+
+.t-bq-quote-jasper .t-bq-quote-jasper-pattern .t-bq-quote-jasper-qmark {
+    flex-basis: 100px;
+    font-family: Garamond, Georgia, "Times New Roman", serif;
+    font-size: 60pt;
+    color: #999999;
+    text-align: center;
+    height: 80px;
+    line-height: 90pt;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+
+.t-bq-quote-jasper .t-bq-quote-jasper-base {
+    background: #ffffff;
+    padding: 60px;
+    font-size: 11pt;
+    line-height: 1.62em;
+    border-radius: 0 0 10px 10px;
+}
+
+.t-bq-quote-jasper .t-bq-quote-jasper-meta {
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 2px dotted #777777;
+    text-align: center;
+}
+
+.t-bq-quote-jasper .t-bq-quote-jasper-meta .t-bq-quote-jasper-author,
+.t-bq-quote-jasper .t-bq-quote-jasper-meta .t-bq-quote-jasper-source {
+    color: #777777;
+}
+
+.t-bq-quote-jasper .t-bq-quote-jasper-meta .t-bq-quote-jasper-author {
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.t-bq-quote-jasper .t-bq-quote-jasper-meta .t-bq-quote-jasper-author cite {
+    font-style: normal;
+}
+
+.t-bq-quote-jasper .t-bq-quote-jasper-meta .t-bq-quote-jasper-source {
+    font-size: 9pt;
+}
+
+@media screen and (max-width: 768px) {
+
+    .t-bq-quote-jasper .t-bq-quote-jasper-base {
+        padding-left: 30px;
+    }
+}
+
+@media screen and (min-width: 1300px){
+    #contact-title {
+        font-size: 3rem;
+        margin-right: 15rem;
+    }
+    #contact-description {
+        font-size: 2rem;
+        margin-right: 15rem;
+    }
+
+    .card-container {
+        margin: 3rem 4rem;
+    }
+}
+
+@media screen and (min-width: 1900px){
+    #title {
+        font-size: 4rem;
+        width: 850px;
+        padding-top: 25rem;
+        margin-left: 10rem;
+    }
+    #description {
+        font-size: 1.5rem;
+        width: 750px;
+        margin-left: 10rem;
+        margin-top: 1rem;
+    }
+
+    #hero {
+        margin-right: -12rem;
+        width: 42rem;
+        height: 30rem;
+        margin-top: -30rem;
+    }
+    .btn {
+        padding: 1.5rem 8rem;
+        font-size: 1.5rem;
+    }
+    .btn-1 {
+        padding: 1.5rem 8rem;
+        font-size: 1.5rem;
+    }
+
+    .btn-container {
+        margin-top: 2rem;
+        margin-left: 10rem;
+    }
+
+    .hemant {
+        width: 35rem;
+        height:50rem;
+        margin: -35rem 8rem;
+    }
+    #about-title {
+        font-size: 6rem;
+        margin-right: -10rem;    
+    }
+    #description-about {
+        font-size: 2rem;
+        width: 650px;
+        margin: 5rem 0rem 0 30rem;
+    }
+    .btn-container-about {
+        margin-top: 3rem;
+        margin-right: -6rem;
+    }
+    #contact-title {
+        font-size: 5rem;
+        margin-right: -20rem;
+    }
+    #contact-description {
+        font-size: 3rem;
+        margin-right: -19.5rem;
+    }
+    .card-container {
+        width: 100%;
+        margin: 9rem 10rem;
+    }
+    .card-body {
+        width:55rem;
+    }
+    .card-description {
+        text-align: center;
+    }
+    .card-body .btn-1 {
+        padding: 1rem 6rem;
+    }
+    .icon-container {
+        margin: 2rem 11rem;
+    }
+    #email-btn {
+        margin: 3rem;
+    }
+    #phone-btn {
+        margin: 2rem 2.1rem;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    #title {
+        font-size: 1.2rem;
+        margin-left: 2rem;
+        width: 250px;
+        padding-top: 4rem;
+    }
+    #description {
+        margin-left: 2rem;
+        width: 285px;
+    }
+    .btn, .btn-1 {
+        padding: 0.5rem 2rem;
+        font-size: 1rem;
+    }
+    .btn-container {
+        margin-left: 2rem;
+    }
+    #hero {
+        float:left;
+        width: 300px;
+        height: 380px;
+        margin-top: 3rem;
+        margin-left: 0.5rem;
+    }
+    #about-title {
+        float: left;
+        margin: 2rem 0 0 2rem;
+        font-size: 2rem;
+        width: 15rem;
+        text-align: center;
+    }
+    .hemant {
+        margin: 1rem 1rem;
+        width: 18rem;
+    }
+    #description-about {
+        margin-right: 80rem;
+        width: 300px;
+    }
+    .btn-conatainer {
+        display: none;
+    }
+} 
