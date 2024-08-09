@@ -483,12 +483,12 @@ section.t-bq-section {
 @media screen and (max-width: 600px){
     #title {
         font-size: 1.2rem;
-        margin-left: 2rem;
+        margin-left: 3rem;
         width: 250px;
         padding-top: 4rem;
     }
     #description {
-        margin-left: 2rem;
+        margin-left: 3rem;
         width: 285px;
     }
     .btn, .btn-1 {
@@ -496,31 +496,57 @@ section.t-bq-section {
         font-size: 1rem;
     }
     .btn-container {
-        margin-left: 2rem;
+        margin-left: 3rem;
     }
     #hero {
         float:left;
         width: 300px;
         height: 380px;
         margin-top: 3rem;
-        margin-left: 0.5rem;
+        margin-left: 3rem;
     }
     #about-title {
         float: left;
-        margin: 2rem 0 0 2rem;
+        margin: 2rem 0 0 4rem;
         font-size: 2rem;
         width: 15rem;
         text-align: center;
     }
     .hemant {
-        margin: 1rem 1rem;
+        margin: 1rem 3rem;
         width: 18rem;
     }
     #description-about {
-        margin-right: 80rem;
+        margin-right: 78rem;
         width: 300px;
     }
     .btn-conatainer {
         display: none;
+    }
+    #contact-title {
+        margin-right: 76rem;
+    }
+    #contact-description {
+        margin-right: 76rem;
+    }
+    .card-container {
+        flex-direction: column;
+        margin: 2rem 2rem;
+    }
+    .card-body {
+        width: 20rem;
+
+    }
+    .icon-container {
+        margin-left: 5rem;
+    }
+    .t-bq-wrapper.t-bq-wrapper-boxed {
+        flex-direction: column;
+    }
+    .t-bq-quote-jasper {
+        width: 20rem;
+    }
+    section.t-bq-section {
+        margin-top: 15rem;
     }
 } 
